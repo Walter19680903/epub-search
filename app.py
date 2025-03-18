@@ -17,9 +17,7 @@ MY_SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 # 設定目錄
 CACHE_DIR = os.path.join(MY_SCRIPT_DIR, "cache")    # 存放預先處理好的 JSON
 EPUB_DIR = os.path.join(MY_SCRIPT_DIR, "epubs")       # 存放 EPUB 檔案
-LOGS_DIR = os.path.join(MY_SCRIPT_DIR, "logs")        # 日誌存放目錄
 os.makedirs(CACHE_DIR, exist_ok=True)
-os.makedirs(LOGS_DIR, exist_ok=True)
 
 app = Flask(__name__)
 
@@ -34,11 +32,13 @@ stream_handler.setFormatter(stream_formatter)
 logger.addHandler(stream_handler)
 
 # 新增 RotatingFileHandler, 寫到子目錄 logs/app.log
-log_file = os.path.join(LOGS_DIR, "app.log")
-file_handler = RotatingFileHandler(log_file, mode='a', maxBytes=5*1024*1024, backupCount=5, encoding='utf-8')
-file_formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-file_handler.setFormatter(file_formatter)
-logger.addHandler(file_handler)
+# LOGS_DIR = os.path.join(MY_SCRIPT_DIR, "logs")        # 日誌存放目錄
+# os.makedirs(LOGS_DIR, exist_ok=True)
+# log_file = os.path.join(LOGS_DIR, "app.log")
+# file_handler = RotatingFileHandler(log_file, mode='a', maxBytes=5*1024*1024, backupCount=5, encoding='utf-8')
+# file_formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+# file_handler.setFormatter(file_formatter)
+# logger.addHandler(file_handler)
 
 # 讀取書籍資料 (titles.json)
 # 結構範例: { "大正藏密教部經典清單-614本.docx": { "T0848": ["7", "大毘盧遮那成佛神變加持經"], ... } }
