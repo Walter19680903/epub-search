@@ -10,7 +10,7 @@ from flask import Flask, request, jsonify, abort
 from modules import search_epub  # 從 modules 目錄導入
 
 # 在網頁 "經文名相查詢" 右邊, 用灰色小字顯示 "更新日期: {UPDATE_DATE}"
-UPDATE_DATE = '2025/03/18'
+UPDATE_DATE = '2025/04/26'
 
 MY_SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -116,13 +116,48 @@ def search_ajax():
         else:
             entry["note"] = ""
             entry["title"] = key
-        
+
         entry["count"] = value.get("total", 0)
+
+        # 收集所有匹配段落
         paragraphs = []
         if "sentences" in value:
             for sub_key, snippet_list in value["sentences"].items():
                 paragraphs.extend(snippet_list)
-        entry["paragraphs"] = paragraphs
+
+        # 以「關鍵字在段落中出現>=2次」為條件，做子字串比對去重
+        deduped = []
+        first_sub = None
+        for para in paragraphs:
+            # 找出關鍵字在段落中的所有位置
+            occs = [m.start() for m in re.finditer(re.escape(keyword), para)]
+            # 出現不足兩次：一定保留，並重置 first_sub
+            if len(occs) < 2:
+                deduped.append(para)
+                first_sub = None
+                continue
+
+            # 擷取「第一個關鍵字前5字」到「最後一個關鍵字後」之子字串
+            start_idx = max(0, occs[0] - 5)
+            end_idx = occs[-1] + len(keyword)
+            sub = para[start_idx:end_idx]
+
+            if first_sub is None:
+                # 第一個含重複字串段落：保留並設為 first_sub
+                deduped.append(para)
+                first_sub = sub
+            else:
+                if first_sub.find(sub) != -1:
+                    # 重複段落：跳過
+                    logger.info(f"跳過重複內文，子字串：{sub}")
+                    continue
+                else:
+                    # 新子字串不在 first_sub 內：保留，並更新 first_sub
+                    deduped.append(para)
+                    first_sub = sub
+
+        entry["paragraphs"] = deduped
+        
         # 注意：這裡原 note 改成以 pages 的 key 數量表示卷數，供表格顯示使用
         entry["pages"] = value.get("pages", {})
         transformed[key] = entry
@@ -152,6 +187,29 @@ def index():
         th {{ cursor: pointer; user-select: none; font-size: 18px; }}
         #searchStatus {{ font-size: 20px; font-weight: bold; margin-top: 10px; margin-bottom: 10px; }}
         .hidden {{ display: none; }}
+        .scroll-btn {{
+        position: fixed;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        background: rgba(0, 0, 0, 0.5);
+        border: none;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0.6;
+        transition: opacity 0.2s;
+        }}
+        .scroll-btn:hover {{
+        opacity: 1;
+        }}
+        .scroll-btn-top   {{ bottom: 80px; }}
+        .scroll-btn-bottom{{ bottom: 20px; }}
       </style>
       <script>
       // 定義 escapeRegExp 函式以處理關鍵字中的特殊字元
@@ -242,7 +300,7 @@ def index():
                                   // 卷數改為 pages 物件中 key 的數量
                                   "<th onclick='sortTable(1)'><span class='header-label'>卷數</span> <span class='sort-icon'>&#x25B2;&#x25BC;</span></th>" +
                                   "<th onclick='sortTable(2)'><span class='header-label'>經名</span> <span class='sort-icon'>&#x25B2;&#x25BC;</span></th>" +
-                                  "<th onclick='sortTable(3)'><span class='header-label'>名相總個數</span> <span class='sort-icon'>&#x25B2;&#x25BC;</span></th>" +
+                                  "<th onclick='sortTable(3)'><span class='header-label'>名相總筆數</span> <span class='sort-icon'>&#x25B2;&#x25BC;</span></th>" +
                                   "</tr></thead><tbody>";
                   var totalBookCount = 0, totalVol = 0, totalCount = 0;
                   for (var key in items) {{
@@ -268,8 +326,18 @@ def index():
                   // 每筆經號與經名以大綠色粗體呈現（不受關鍵字替換影響）
                   for (var key in items) {{
                       var item = items[key];
-                      contentHTML += "<hr><p style=\\"color:green; font-size:larger;\\"><strong>(" 
-                                     + (item.book_key || "") + ") " + (item.title || "") + "</strong></p>";
+                      //contentHTML += "<hr><p style=\\"color:green; font-size:larger;\\"><strong>(" 
+                      //  + (item.book_key || "") + ") " + (item.title || "") + "</strong></p>";
+                      // 【說明】計算卷數與名相筆數
+                      var pageCount = (item.pages && typeof item.pages === 'object') ? Object.keys(item.pages).length : 0;
+                      var countNum = item.count || 0;
+                      console.log("[Display] " + item.book_key
+                        + ": 卷數=" + pageCount
+                        + ", 名相筆數=" + countNum);
+                      contentHTML += '<hr><p style="color:green; font-size:larger;"><strong>('
+                        + item.book_key + ') ' + item.title
+                        + ' (卷數:' + pageCount + ', 名相筆數:' + countNum + ')'
+                        + '</strong></p>';
                       if (item.paragraphs) {{
                           item.paragraphs.forEach(function(para) {{
                               // 處理內文中若出現搜尋關鍵字，進行紅色粗體替換
@@ -345,12 +413,17 @@ def index():
               }}
           }});
       }});
-      </script>
+      function scrollToTop() {{
+        window.scrollTo({{top: 0, behavior: 'smooth'}});
+        }}
+      function scrollToBottom() {{
+        window.scrollTo({{top: document.body.scrollHeight, behavior: 'smooth'}});
+        }}
+     </script>
     </head>
     <body>
       <div style="display: flex; justify-content: space-between; align-items: center;">
-         <h1 style="margin: 0;">經文名相查詢</h1>
-         <span style="font-size: 14px; color: grey;">更新日期: {UPDATE_DATE}</span>
+         <h1 style="margin: 0;">經文名相查詢</h1>         
       </div>
       <input type="text" id="keyword" placeholder="輸入關鍵字 (可使用 * 為萬用字元)">
       <button onclick="searchKeyword()">搜尋</button>
@@ -361,6 +434,9 @@ def index():
           <button id="downloadCsv" onclick="downloadCSV()">下載 CSV 檔</button>
       </div>
       <div id="textContainer"></div>
+      <!-- 新增：懸浮上下捲動按鈕 -->
+      <button class="scroll-btn scroll-btn-top" onclick="scrollToTop()" title="回到頂部">↑</button>
+      <button class="scroll-btn scroll-btn-bottom" onclick="scrollToBottom()" title="回到底部">↓</button>
     </body>
     </html>
     """
