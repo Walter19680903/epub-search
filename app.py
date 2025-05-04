@@ -38,11 +38,18 @@ logger.addHandler(fh)
 # ------------------------------------------
 # 工具函式：移除重疊段落
 # ------------------------------------------
-def remove_overlap(prev: str, curr: str) -> str:
-    max_len = min(len(prev), len(curr))
-    for l in range(max_len, 0, -1):
-        if prev.endswith(curr[:l]):
-            return curr[l:]
+def remove_overlap(prev: str, curr: str, keyword: str) -> str:
+    """
+    移除 prev 與 curr 之間的重疊片段，僅在 curr 前段(直到第一個 keyword 出現之前)完全與 prev 結尾重複時才去除，
+    確保關鍵字本身及其之後的內容完整保留。
+    """
+    # 找到 curr 中首個 keyword 的位置
+    first_idx = curr.find(keyword)
+    # 若首個 keyword 不在開頭，且 prev 結尾包含 curr[:first_idx]
+    if first_idx > 0 and prev.endswith(curr[:first_idx]):
+        # 移除從開頭到關鍵字之前的重疊部分
+        return curr[first_idx:]
+    # 否則完整返回 curr
     return curr
 
 # ------------------------------------------
@@ -121,14 +128,19 @@ def search_ajax():
         entry['note'] = note
         entry['title'] = title
         entry['count'] = value.get('total', 0)
-        # 收集段落
+       # 收集段落
         paras = []
         for lst in value.get('sentences', {}).values():
             paras.extend(lst)
-        # 去重
+
+        # 去重：用 set + 簡易標準化
+        seen = set()
         dedup = []
         for p in paras:
-            if p not in dedup:
+            # 標準化：壓縮多重空白、去除頭尾空格
+            norm = re.sub(r'\s+', ' ', p.strip())
+            if norm not in seen:
+                seen.add(norm)
                 dedup.append(p)
         # 處理重疊
         processed = []
@@ -138,7 +150,7 @@ def search_ajax():
             if len(occ) < 2 or prev is None:
                 processed.append(p)
             else:
-                trimmed = remove_overlap(prev, p)
+                trimmed = remove_overlap(prev, p, keyword)
                 if trimmed.strip():
                     processed.append(trimmed)
             prev = p

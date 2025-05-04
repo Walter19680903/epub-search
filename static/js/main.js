@@ -3,48 +3,80 @@
 'use strict';
 
 // 全域狀態：記錄點選列
-window.selectedRowIndex = null;
 window.selectedKey = null;
 
 /**
  * 記錄並高亮使用者點選的列
  * @param {number} idx - 資料列索引（從 1 開始）
 */
-function rememberRow(idx) {
-    var table = document.getElementById('resultTable');
-    if (!table) return;
-    // 取得並記錄新的 key
-    var key = table.rows[idx].cells[0].innerText;
-    window.selectedKey = key;
-    // 重新高亮
-    highlightSelectedRow();
+// function rememberRow(idx) {
+//   var table = document.getElementById('resultTable');
+//   if (!table) return;
+//   var key = table.rows[idx].cells[0].innerText;
+//   console.log("記錄選取的經號:", key);
+//   window.selectedKey = key;
+//   highlightSelectedRow();
+// }
+
+
+/**
+ * 根據經號 key，記錄使用者點選的經文列並高亮
+ */
+function rememberKey(e, key) {
+  e.preventDefault(); // 防止預設跳轉動作
+  console.log("記錄選取的經號:", key);
+  window.selectedKey = key;
+  highlightSelectedRow();
+
+  // 平滑移動至內文區對應段落
+  const target = document.getElementById('sutra-' + key);
+  if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
 }
+
 
 /**
  * 根據 window.selectedKey，為對應列加上 .selected-row，高亮；其餘移除
 */
 function highlightSelectedRow() {
-    var table = document.getElementById('resultTable');
-    if (!table || !window.selectedKey) return;
-    Array.from(table.rows).forEach(function(row, i) {
-      if (i === 0) return; // 跳過表頭
-      var key = row.cells[0].innerText;
-      if (key === window.selectedKey) {
-        row.classList.add('selected-row');
+  const table = document.getElementById('resultTable');
+  if (!table) {
+      console.warn("⚠ 找不到 resultTable");
+      return;
+  }
+
+  let matched = false;
+  const targetKey = (window.selectedKey || '').trim();
+
+  Array.from(table.rows).forEach((row, index) => {
+      if (index === 0) return; // 跳過表頭
+      const key = row.cells[0].innerText.trim();
+
+      if (key === targetKey) {
+          row.classList.remove('selected-row');  // 保險：避免樣式未刷新
+          row.classList.add('selected-row');
+          matched = true;
+          console.log("✅ 高亮列:", key);
       } else {
-        row.classList.remove('selected-row');
+          row.classList.remove('selected-row');
       }
-    });
+  });
+
+  if (!matched && targetKey) {
+      console.warn("⚠ 找不到符合的 selectedKey:", targetKey, "可能尚未渲染完成");
+  }
 }
+
 
 /**
  * 清除所有搜尋狀態、重置索引，移除高亮
 */
 function clearSearch() {
+    console.log("清除所有搜尋狀態，包括背景高亮");
     // 清空關鍵字
     document.getElementById('keyword').value = '';
     // 重設選取列索引
-    window.selectedRowIndex = null;
     window.selectedKey = null;
     // 移除所有被選取標記
     var rows = document.querySelectorAll('#resultContainer tr');
@@ -61,34 +93,55 @@ function clearSearchResults() {
     document.getElementById("resultContainer").innerHTML = "";
     document.getElementById("csvContainer").classList.add("hidden");
     document.getElementById("textContainer").innerHTML = "";
+    window.selectedKey = null;    
 }
 
 // 平滑捲動回表格
 function scrollBackToTable() {
-  console.log("執行 scrollBackToTable(), idx =", window.selectedRowIndex);
-  var table = document.getElementById('resultTable');
+  console.log("執行 scrollBackToTable(), selectedKey =", window.selectedKey);
+  const table = document.getElementById('resultTable');
   if (!table) {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-    return;
-  }
-  var rows = table.getElementsByTagName('tr');
-  // 用經號找對應那列
-  var key = window.selectedKey;
-  if (!key) { rows[1].scrollIntoView({ behavior:'smooth', block:'center' }); return; }
-  for (var i = 1; i < rows.length; i++) {
-    if (rows[i].cells[0].innerText === key) {
-      rows[i].scrollIntoView({ behavior:'smooth', block:'center' });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
       return;
-    }
   }
+  const rows = table.getElementsByTagName('tr');
+  const key = (window.selectedKey || '').trim();
+
+  // 確保高亮狀態正確（可能排序後消失）
+  // 延遲套用高亮，確保滾動與 DOM 重排已完成
+  setTimeout(() => {
+    highlightSelectedRow();
+  }, 150);
+  if (!key) {
+      if (rows.length > 1) rows[1].scrollIntoView({ behavior: 'smooth', block: 'center' });
+      return;
+  }
+  for (let i = 1; i < rows.length; i++) {
+      const rowKey = rows[i].cells[0].innerText.trim();
+      if (rowKey === key) {
+          rows[i].scrollIntoView({ behavior: 'smooth', block: 'center' });
+          return;
+      }
+  }
+  console.warn("⚠ 找不到對應 key 的列: ", key);
 }
 
 // 平滑捲動頂部／底部
 function scrollToTop() {
+  console.log("執行 scrollToTop(), selectedKey =", window.selectedKey);
   window.scrollTo({ top: 0, behavior: 'smooth' });
+  // 延遲套用高亮，確保滾動與 DOM 重排已完成
+  setTimeout(() => {
+    highlightSelectedRow();
+  }, 150); 
 }
 function scrollToBottom() {
+  console.log("執行 scrollToBottom(), selectedKey =", window.selectedKey);
   window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+  // 延遲套用高亮，確保滾動與 DOM 重排已完成
+  setTimeout(() => {
+    highlightSelectedRow();
+  }, 150);
 }
 
 // 發送搜尋請求
@@ -148,12 +201,18 @@ function renderTable(items) {
     var item = items[key];
     var pg = item.pages ? Object.keys(item.pages).length : 0;
     var rowIndex = i + 1;
+    // html += '<tr>'
+    //      + '<td><a href="#sutra-' + key + '" onclick="rememberRow(' + rowIndex + ')">' + key + '</a></td>'
+    //      + '<td>' + pg + '</td>'
+    //      + '<td><a href="#sutra-' + key + '" onclick="rememberRow(' + rowIndex + ')">' + item.title + '</a></td>'
+    //      + '<td>' + (item.count || '') + '</td>'
+    //      + '</tr>';
     html += '<tr>'
-         + '<td><a href="#sutra-' + key + '" onclick="rememberRow(' + rowIndex + ')">' + key + '</a></td>'
-         + '<td>' + pg + '</td>'
-         + '<td><a href="#sutra-' + key + '" onclick="rememberRow(' + rowIndex + ')">' + item.title + '</a></td>'
-         + '<td>' + (item.count || '') + '</td>'
-         + '</tr>';
+     + `<td><a href="#sutra-${key}" onclick="rememberKey(event, '${key}')">${key}</a></td>`
+     + `<td>${pg}</td>`
+     + `<td><a href="#sutra-${key}" onclick="rememberKey(event, '${key}')">${item.title}</a></td>`
+     + `<td>${item.count || ''}</td>`
+     + '</tr>';
   });
 
   html += '</tbody></table>';
@@ -162,6 +221,11 @@ function renderTable(items) {
   // 搜尋成功後顯示 CSV 按鈕
   var csvContainer = document.getElementById('csvContainer');
   if (csvContainer) csvContainer.classList.remove('hidden');  
+
+  // ⏱ 確保表格渲染完成後再套用高亮
+  setTimeout(() => {
+    highlightSelectedRow();
+  }, 100);  // 延遲一點時間確保 DOM 完成  
 }
 
 /**
@@ -256,14 +320,9 @@ function sortTable(col) {
       icon.textContent = (idx === col) ? (asc ? '▲' : '▼') : '▲▼';
     });
   
-    // 排序後，重新套用高亮並更新 selectedRowIndex
+    // 排序後，重新套用高亮並更新 selectedKey 
     highlightSelectedRow();
-  
-    // 修正：再次確保 selectedRowIndex 正確
-    // （highlightSelectedRow 會依 selectedKey 設定 selectedRowIndex）
-    if (window.selectedKey && table) {
-      // 沒必要做額外動作，selectedRowIndex 已在 highlightSelectedRow 中更新
-    }
+
   }
 
 function calculateVolume(items) {
