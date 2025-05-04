@@ -1,0 +1,22 @@
+{
+    "T0984": {
+        "total": 2,
+        "pages": {
+            "juans/001.xhtml": 1,
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "大孔雀明王呪，擁護我等願見百春。說呪如是：「多婆離摩婆離遮離"
+            ],
+            "juans/002.xhtml": [
+                "大孔雀明王呪，常守護我，願壽百歲。」「阿難！復有十大羅剎女，"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 1,
+        "found_juans": 2,
+        "total": 2
+    }
+}

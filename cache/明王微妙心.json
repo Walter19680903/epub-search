@@ -1,0 +1,29 @@
+{
+    "T1205": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "明王微妙心，亦大馬口吞噉一切有情。一切眾生若干業煩惱心因等，"
+            ]
+        }
+    },
+    "T1217": {
+        "total": 1,
+        "pages": {
+            "juans/003.xhtml": 1
+        },
+        "sentences": {
+            "juans/003.xhtml": [
+                "明王微妙心，具大威勢功德難思，能與行人為吉祥事。若先持十洛叉"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 2,
+        "total": 2
+    }
+}

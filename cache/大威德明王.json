@@ -1,0 +1,41 @@
+{
+    "T0855": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "大威德明王印(根本印如常)。次四大護(在下)。次初門釋迦文印"
+            ]
+        }
+    },
+    "T1104": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "大威德明王等咸作是言：『善哉善哉！善男子！汝等具於諸佛菩薩之"
+            ]
+        }
+    },
+    "T1214": {
+        "total": 2,
+        "pages": {
+            "juans/001.xhtml": 2
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "大威德明王，身作玄雲色，遍身生火焰，執持諸色器仗，身安三字，",
+                "大威德明王讚：「曩謨(引)嚩囉娜嚩日囉(二合)蘖囉(二合)("
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 3,
+        "found_juans": 3,
+        "total": 4
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "T0848": {
+        "total": 1,
+        "pages": {
+            "juans/007.xhtml": 1
+        },
+        "sentences": {
+            "juans/007.xhtml": [
+                "降三世種子心曰：「南麼三曼多伐折囉(引二合)赧涸」此中訶字門"
+            ]
+        }
+    },
+    "T0860": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "降三世種子心曰：「namaḥsamantavajraṇaṃn"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 2,
+        "total": 2
+    }
+}

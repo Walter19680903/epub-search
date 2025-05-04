@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>經文名相查詢</title>
+  <!-- 引入靜態 CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header style="margin-left:20px; margin-top:10px;">
+    <h1>經文名相查詢</h1>
+  </header>
+
+  <main>
+    <!-- 搜尋區 -->
+    <section id="searchSection" style="display:flex; align-items:center; gap:2px; margin:4px 10px 0;">
+        <input type="text" id="keyword" placeholder="輸入關鍵字 (可使用 * 為萬用字元)">
+        <button id="searchBtn" onclick="searchKeyword()">搜尋</button>
+        <button id="clearBtn" onclick="clearSearch()">清除</button>
+    </section>
+
+    <!-- 搜尋結果表格 -->
+    <section id="resultContainer"></section>
+
+    <!-- 恢復 CSV 下載按鈕 -->
+    <div id="csvContainer" class="hidden" style="margin:4px 0 0 10px;">
+        <button id="downloadBtn" onclick="downloadXLSX()">下載 XLSX 檔</button>
+    </div>
+
+    <!-- 關鍵字相關內文 -->
+    <section id="textContainer"></section>
+  </main>
+
+  <!-- 懸浮按鈕 -->
+  <div id="floatContainer">
+    <!-- 返回表格 -->
+    <button class="scroll-btn scroll-btn-back" onclick="scrollBackToTable()" title="返回表格">⏎</button>
+    <!-- 回到頂部 -->
+    <button class="scroll-btn scroll-btn-top" onclick="scrollToTop()" title="回到頂部">↑</button>
+    <!-- 回到底部 -->
+    <button class="scroll-btn scroll-btn-bottom" onclick="scrollToBottom()" title="回到底部">↓</button>
+  </div>
+
+  <!-- 引入 SheetJS，用於產生 XLSX -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <!-- 引入靜態 JS -->
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

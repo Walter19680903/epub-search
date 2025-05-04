@@ -1,0 +1,66 @@
+{
+    "T0893a": {
+        "total": 1,
+        "pages": {
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "明王眷屬；次應起首持誦真言，想真言主如對目前，如是傾誠不應散"
+            ]
+        }
+    },
+    "T0893b": {
+        "total": 1,
+        "pages": {
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "明王眷屬；次應持誦真言，想真言如對目前，如是傾誠不應散亂心緣"
+            ]
+        }
+    },
+    "T0893c": {
+        "total": 1,
+        "pages": {
+            "juans/003.xhtml": 1
+        },
+        "sentences": {
+            "juans/003.xhtml": [
+                "明王眷屬；次應持誦真言，想真言主如對目前，如是頎誠不應散亂心"
+            ]
+        }
+    },
+    "T0923": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "明王眷屬(想真言王如對目前)。正念誦時，若有謦咳昏沈廢忘真言"
+            ]
+        }
+    },
+    "T1191": {
+        "total": 2,
+        "pages": {
+            "juans/005.xhtml": 1,
+            "juans/009.xhtml": 1
+        },
+        "sentences": {
+            "juans/005.xhtml": [
+                "明王眷屬於此安居。「於彼壇上復畫八尊勝佛頂，體有金色遍身光明"
+            ],
+            "juans/009.xhtml": [
+                "明王眷屬真言為成就法，於船中面西安㡧，持誦者面東持於齋戒，以"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 5,
+        "found_juans": 6,
+        "total": 6
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "T0893a": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "執金剛母，號為忙莽雞，用此真言為扇底迦。金剛母真言曰：「『曩"
+            ]
+        }
+    },
+    "T0893b": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "執金剛母，號為忙莽鷄，用此真言為扇底迦。金剛部母真言曰：「『"
+            ]
+        }
+    },
+    "T0893c": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "執金剛母忙莽鷄真言為扇底迦法。金剛母真言曰：「『那謨刺怛(二"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 3,
+        "found_juans": 3,
+        "total": 3
+    }
+}

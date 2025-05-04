@@ -1,0 +1,29 @@
+{
+    "T0848": {
+        "total": 1,
+        "pages": {
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "寂然護摩。護摩依法住，初自中胎藏，至第二之外，於漫茶羅中，作"
+            ]
+        }
+    },
+    "T0850": {
+        "total": 1,
+        "pages": {
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "寂然護摩，護摩依法住，初自中胎藏，至第二之外，於曼荼羅中，作"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 2,
+        "total": 2
+    }
+}

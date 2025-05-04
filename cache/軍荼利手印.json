@@ -1,0 +1,40 @@
+{
+    "T0894a": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "軍荼利手印真言而縛諸難。其手印相，左手置於右手膊跟上，以大指"
+            ]
+        }
+    },
+    "T0894b": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "軍荼利手印、真言而縛諸難。其手印相，左手置於右膊上，以大指捻"
+            ]
+        }
+    },
+    "T1212": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "軍荼利手印法品第十八「復次說印法。於金剛種族法中，大印有一百"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 3,
+        "found_juans": 3,
+        "total": 3
+    }
+}

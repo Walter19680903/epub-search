@@ -1,0 +1,67 @@
+{
+    "T0867": {
+        "total": 1,
+        "pages": {
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "遜婆明王根本真言曰：「oṃvajrahūṃkarahuṃhu"
+            ]
+        }
+    },
+    "T0893a": {
+        "total": 1,
+        "pages": {
+            "juans/003.xhtml": 1
+        },
+        "sentences": {
+            "juans/003.xhtml": [
+                "遜婆明王，左置計利枳里明王；右置拔折囉尊，左置拔折囉但吒；右"
+            ]
+        }
+    },
+    "T0893b": {
+        "total": 1,
+        "pages": {
+            "juans/003.xhtml": 1
+        },
+        "sentences": {
+            "juans/003.xhtml": [
+                "遜婆明王，左置計唎枳里明王；右置拔折羅尊，左置跋折羅但吒；右"
+            ]
+        }
+    },
+    "T0893c": {
+        "total": 1,
+        "pages": {
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "遜婆明王，左置計唎枳里明王；右置拔折羅尊，左置拔折囉但吒；右"
+            ]
+        }
+    },
+    "T0897": {
+        "total": 3,
+        "pages": {
+            "juans/002.xhtml": 2,
+            "juans/003.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "遜婆明王、軍荼利忿怒尊、般坦尼訖涅(二合)婆尊、金剛錛鉢尊、",
+                "遜婆明王及莽麼計部母真言而請本部諸尊、或復唯以曼荼羅主之根本"
+            ],
+            "juans/003.xhtml": [
+                "遜婆明王真言手印。作此法已，其諸難等皆被火燒。是故，當用如上"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 5,
+        "found_juans": 6,
+        "total": 7
+    }
+}

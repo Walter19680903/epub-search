@@ -1,0 +1,29 @@
+{
+    "T0848": {
+        "total": 1,
+        "pages": {
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "光明壇，四節為周界，中表金剛印，師位之右方，護摩具支分，學人"
+            ]
+        }
+    },
+    "T0850": {
+        "total": 1,
+        "pages": {
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "光明壇，四節為周界，中表金剛印。師位之右方，護摩具支分，學人"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 2,
+        "total": 2
+    }
+}

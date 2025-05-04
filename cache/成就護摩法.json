@@ -1,0 +1,29 @@
+{
+    "T0893b": {
+        "total": 1,
+        "pages": {
+            "juans/003.xhtml": 1
+        },
+        "sentences": {
+            "juans/003.xhtml": [
+                "成就護摩法真言曰：「『那謨剌怛娜怛羅耶野那莫室戰拏跋日囉播拏"
+            ]
+        }
+    },
+    "T0893c": {
+        "total": 1,
+        "pages": {
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "成就護摩法真言：「『那謨剌怛(二合)娜怛(二合)囉耶野(一句"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 2,
+        "total": 2
+    }
+}

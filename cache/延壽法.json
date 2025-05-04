@@ -1,0 +1,40 @@
+{
+    "T1134A": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "延壽法，面向北坐，當作圓壇。觀諸聖眾悉皆白色，身著白衣，供養"
+            ]
+        }
+    },
+    "T1222a": {
+        "total": 1,
+        "pages": {
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "延壽法者，對金剛童子像前塗壇供養，於熟銅器中置牛黃，念誦乃至"
+            ]
+        }
+    },
+    "T1222b": {
+        "total": 1,
+        "pages": {
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "延壽法。對像塗壇供養，於熟銅器中置牛黃，念誦乃至光出，手把即"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 3,
+        "found_juans": 3,
+        "total": 3
+    }
+}

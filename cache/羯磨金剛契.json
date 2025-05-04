@@ -1,0 +1,26 @@
+{
+    "T0866": {
+        "total": 3,
+        "pages": {
+            "juans/002.xhtml": 1,
+            "juans/003.xhtml": 1,
+            "juans/004.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "羯磨金剛契已，分為二，應以一切羯磨所成鬘繫自頭上，而誦此密語"
+            ],
+            "juans/003.xhtml": [
+                "羯磨金剛契故，能作一切事業；由薩埵契故，得成金剛薩埵身；由金"
+            ],
+            "juans/004.xhtml": [
+                "羯磨金剛契已，作是思惟：『虛空藏中一切如來為承事故，即想一一"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 1,
+        "found_juans": 3,
+        "total": 3
+    }
+}

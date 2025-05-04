@@ -1,0 +1,29 @@
+{
+    "T0908": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "獨股羯磨杵，四隅畫蓮葉，第二院應畫，降三世眷屬，四種忿怒相，"
+            ]
+        }
+    },
+    "T0909": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "獨股羯磨杵，四隅畫蓮華；第二院應畫，降三世眷屬，四種忿怒相；"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 2,
+        "total": 2
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "T0889": {
+        "total": 1,
+        "pages": {
+            "juans/005.xhtml": 1
+        },
+        "sentences": {
+            "juans/005.xhtml": [
+                "大笑明王，紅色；復有大力最上金剛索明王，身綠色。此等明王常護"
+            ]
+        }
+    },
+    "T1188": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "大笑明王。有大威德力，金剛大菩薩，金剛王大樂，金剛相大喜，金"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 2,
+        "total": 2
+    }
+}

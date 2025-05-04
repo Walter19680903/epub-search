@@ -1,0 +1,51 @@
+{
+    "T0885": {
+        "total": 1,
+        "pages": {
+            "juans/007.xhtml": 1
+        },
+        "sentences": {
+            "juans/007.xhtml": [
+                "三部祕密等。諸祕密賢聖，皆最上部攝，無初而寂靜，離性及非性，"
+            ]
+        }
+    },
+    "T0893a": {
+        "total": 2,
+        "pages": {
+            "juans/003.xhtml": 2
+        },
+        "sentences": {
+            "juans/003.xhtml": [
+                "三部祕密之法。「復次更說通三部祕密曼荼羅。如法界道置跋折囉，"
+            ]
+        }
+    },
+    "T0893b": {
+        "total": 2,
+        "pages": {
+            "juans/003.xhtml": 2
+        },
+        "sentences": {
+            "juans/003.xhtml": [
+                "三部祕密之法。「復次說通三部祕密曼荼羅，如法界道置拔折羅，中"
+            ]
+        }
+    },
+    "T0893c": {
+        "total": 2,
+        "pages": {
+            "juans/002.xhtml": 2
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "三部祕密之法。「復次說通三部祕密漫荼羅。如法界道置拔折羅，中"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 4,
+        "found_juans": 4,
+        "total": 7
+    }
+}

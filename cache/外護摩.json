@@ -1,0 +1,41 @@
+{
+    "T0848": {
+        "total": 1,
+        "pages": {
+            "juans/006.xhtml": 1
+        },
+        "sentences": {
+            "juans/006.xhtml": [
+                "外護摩，隨意成悉地。復次於內心，一性而具三，三處合為一，瑜祇"
+            ]
+        }
+    },
+    "T0903": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "外護摩亦依五輪，求四種事速疾成就——息災、增益、降伏、敬愛。"
+            ]
+        }
+    },
+    "T0973": {
+        "total": 3,
+        "pages": {
+            "juans/002.xhtml": 3
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "外護摩，二者內護摩。若外護摩者，一依常度依事法對。於曼荼羅外",
+                "外護摩，能轉一切障，令生諸福德。一依毘盧遮那經十二種火法，次"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 3,
+        "found_juans": 3,
+        "total": 5
+    }
+}

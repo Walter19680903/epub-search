@@ -1,0 +1,22 @@
+{
+    "T0889": {
+        "total": 2,
+        "pages": {
+            "juans/002.xhtml": 1,
+            "juans/005.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "如來最上金剛杵，汝恒受持當得最上金剛之智。』「持金剛真言曰："
+            ],
+            "juans/005.xhtml": [
+                "如來最上金剛杵；若復作九股上下猛焰相，此是忿怒金剛杵；若復獨"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 1,
+        "found_juans": 2,
+        "total": 2
+    }
+}

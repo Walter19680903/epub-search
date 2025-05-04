@@ -1,0 +1,40 @@
+{
+    "T0848": {
+        "total": 1,
+        "pages": {
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "大力大護明妃曰：「南麼薩婆怛他(引)蘖帝弊(毘也反，下同)("
+            ]
+        }
+    },
+    "T0851": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "大力大護明妃。即以前大界印，其二火輪鉤屈相合，散舒風輪，名無"
+            ]
+        }
+    },
+    "T0854": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "大力大護明妃真言曰：namaḥsarvatathāgateb"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 3,
+        "found_juans": 3,
+        "total": 3
+    }
+}

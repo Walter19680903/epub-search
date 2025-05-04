@@ -1,0 +1,29 @@
+{
+    "T0852b": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "金剛惠印真言觀彼中胎內(諸尊種子，一一分明安布，先想圓光)："
+            ]
+        }
+    },
+    "T0905": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "金剛惠印是般若，觀自在持蓮華印是解脫，則身密法身德、口密是般"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 2,
+        "total": 2
+    }
+}

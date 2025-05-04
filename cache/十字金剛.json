@@ -1,0 +1,33 @@
+{
+    "T1010": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "十字金剛輪，首冠五如來，遍身草綠色，復於身支分，安布八字門："
+            ]
+        }
+    },
+    "T1092": {
+        "total": 2,
+        "pages": {
+            "juans/023.xhtml": 1,
+            "juans/025.xhtml": 1
+        },
+        "sentences": {
+            "juans/023.xhtml": [
+                "十字金剛杵印，繞上火焰。次院青地四面蓮華須彌座上，寶幢幡蓋印"
+            ],
+            "juans/025.xhtml": [
+                "十字金剛杵印，繞上火焰。內外院地純白色地，金剛幖幟，置不空羂"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 3,
+        "total": 3
+    }
+}

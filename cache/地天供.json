@@ -1,0 +1,29 @@
+{
+    "T0959": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "地天供養(身白色，以二手捧寶花籠子，二膝跪地)無能勝姤菩薩無"
+            ]
+        }
+    },
+    "T1092": {
+        "total": 1,
+        "pages": {
+            "juans/019.xhtml": 1
+        },
+        "sentences": {
+            "juans/019.xhtml": [
+                "地天供養。麥麨漿水粳米和盛一分，壇西北外召一切風天供養。牛酥"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 2,
+        "total": 2
+    }
+}

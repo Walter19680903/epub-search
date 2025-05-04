@@ -1,0 +1,29 @@
+{
+    "T0853": {
+        "total": 1,
+        "pages": {
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "內縛五股印，名嚩日羅（二合）播抳)：曩莫糝曼多嚩日囉(二合)"
+            ]
+        }
+    },
+    "T1156B": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "內縛五股印是也。尊勝佛頂印虛心合掌，屈二風甲相對，以二空捻二"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 2,
+        "total": 2
+    }
+}

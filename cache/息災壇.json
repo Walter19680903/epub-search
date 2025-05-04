@@ -1,0 +1,29 @@
+{
+    "T1210": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "息災壇向東，燒白米一千粒一呪一燒，真言句中安除病宇則息病，歸"
+            ]
+        }
+    },
+    "T1251": {
+        "total": 1,
+        "pages": {
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "息災壇色白，衣色一切皆用白色。敬愛如是，所望用青色。增益用黃"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 2,
+        "total": 2
+    }
+}

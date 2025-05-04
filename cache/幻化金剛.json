@@ -1,0 +1,29 @@
+{
+    "T0882": {
+        "total": 1,
+        "pages": {
+            "juans/010.xhtml": 1
+        },
+        "sentences": {
+            "juans/010.xhtml": [
+                "幻化金剛、童子天號金剛鈴、梵天號寂默金剛、帝釋天號金剛器仗，"
+            ]
+        }
+    },
+    "T1190": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "幻化金剛具大腹，金剛中生金剛主，是金剛心如虛空，不動獨髮相嚴"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 2,
+        "total": 2
+    }
+}

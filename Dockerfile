@@ -12,6 +12,9 @@ COPY cache cache
 COPY epubs epubs
 COPY modules modules
 COPY titles titles
+COPY static static
+COPY templates templates
+COPY titles titles
 COPY app.py .
 COPY . .
 

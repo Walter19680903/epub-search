@@ -1,0 +1,29 @@
+{
+    "T0867": {
+        "total": 1,
+        "pages": {
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "八大金剛明王。又於華院外四方面，畫八大供養及四攝等使者，皆戴"
+            ]
+        }
+    },
+    "T0965": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "八大金剛明王，以如來輪故。爾時金剛手菩薩現作降三世金剛明王，"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 2,
+        "total": 2
+    }
+}

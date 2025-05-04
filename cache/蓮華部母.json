@@ -1,0 +1,68 @@
+{
+    "T0893b": {
+        "total": 2,
+        "pages": {
+            "juans/001.xhtml": 1,
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "蓮華部母真言，半拏囉嚩私寧是也。「金剛部中用執金剛母，號為忙"
+            ],
+            "juans/002.xhtml": [
+                "蓮華部母真言：「『唵迦制弭迦制迦戇迦制迦䋾弭迦䋾迦戇迦制皤伽"
+            ]
+        }
+    },
+    "T0893c": {
+        "total": 1,
+        "pages": {
+            "juans/003.xhtml": 1
+        },
+        "sentences": {
+            "juans/003.xhtml": [
+                "蓮華部母真言(歸命同觀音真言頭)：「『唵(同上呼)(一句)迦"
+            ]
+        }
+    },
+    "T0894a": {
+        "total": 2,
+        "pages": {
+            "juans/002.xhtml": 2
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "蓮華部母真言曰：「那囉舍(二合)囊(上)娑嚩(二合)囉舍囊(",
+                "蓮華部母手印相，合掌，十指並屈，頭相著，令掌中虛，如未開蓮華"
+            ]
+        }
+    },
+    "T0894b": {
+        "total": 2,
+        "pages": {
+            "juans/001.xhtml": 2
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "蓮華部母真言曰：「darśanasvṛrgana那囉舍(二合",
+                "蓮華部母半拏羅嚩私寧手印相，合掌，十指並屈，頭相著，令掌中虛"
+            ]
+        }
+    },
+    "T1056": {
+        "total": 1,
+        "pages": {
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "蓮華部母聖者加持故，諸魔毘那夜迦不得其便。從初作先行時乃至求"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 5,
+        "found_juans": 6,
+        "total": 8
+    }
+}

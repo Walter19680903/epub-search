@@ -1,0 +1,44 @@
+{
+    "T0848": {
+        "total": 2,
+        "pages": {
+            "juans/003.xhtml": 1,
+            "juans/007.xhtml": 1
+        },
+        "sentences": {
+            "juans/003.xhtml": [
+                "虛空藏轉明妃曰：「南麼薩婆怛他(引)蘗帝[口*驃](毘庾反)"
+            ],
+            "juans/007.xhtml": [
+                "虛空藏轉明妃曰：「南麼薩婆怛他(引)蘖帝[口*驃](一)微濕"
+            ]
+        }
+    },
+    "T0852b": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "虛空藏轉明妃真言曰：曩莫薩嚩怛他蘖帝[口*驃](一)尾濕嚩("
+            ]
+        }
+    },
+    "T0855": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "虛空藏轉明妃。次增加句「以我功德力」云云。次讚(心略)。次禮"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 3,
+        "found_juans": 4,
+        "total": 4
+    }
+}

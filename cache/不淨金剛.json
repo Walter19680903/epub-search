@@ -1,0 +1,29 @@
+{
+    "T0901": {
+        "total": 1,
+        "pages": {
+            "juans/012.xhtml": 1
+        },
+        "sentences": {
+            "juans/012.xhtml": [
+                "不淨金剛)(三十二)，次安跋折囉吒訶娑座(三十三)，次安跋折"
+            ]
+        }
+    },
+    "T1201": {
+        "total": 2,
+        "pages": {
+            "juans/001.xhtml": 2
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "不淨金剛)令彼取之。爾時不淨金剛須臾悉噉所有諸穢令盡無餘，便"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 2,
+        "total": 3
+    }
+}

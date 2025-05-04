@@ -1,0 +1,52 @@
+{
+    "T0959": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "降三世金剛菩薩(身相如瑜伽)金剛將明妃金剛將童子(如名別無相"
+            ]
+        }
+    },
+    "T1133": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "降三世金剛菩薩身，遍禮毘盧遮那及一切諸佛：「唯願世尊示教於我"
+            ]
+        }
+    },
+    "T1134A": {
+        "total": 2,
+        "pages": {
+            "juans/001.xhtml": 2
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "降三世金剛菩薩身，遍禮毘盧遮那如來及一切諸佛：「惟願世尊示教",
+                "降三世金剛菩薩，頂有毘盧遮那如來。從佛身上遍體毛孔中出白甘露"
+            ]
+        }
+    },
+    "T1134B": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "降三世金剛菩薩身，遍禮毘盧遮那如來及一切諸佛：「唯願世尊示教"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 4,
+        "found_juans": 4,
+        "total": 5
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "T1134A": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "普賢延命種子也。」金剛壽命陀羅尼經法儀軌震部卷二，大明藏杜凾"
+            ]
+        }
+    },
+    "T1136": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "普賢延命像。作此方法，依月一日八日十五日建立道場，燒四十九燈"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 2,
+        "total": 2
+    }
+}

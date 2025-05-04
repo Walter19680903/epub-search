@@ -1,0 +1,40 @@
+{
+    "T0893a": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "三部九種法等及明王妃一切處用。「或有別作扇底迦法用白色香；補"
+            ]
+        }
+    },
+    "T0893b": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "三部九種法等及明王妃一切處用。「若有別作扇底迦法用白色香；若"
+            ]
+        }
+    },
+    "T0893c": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "三部九種法等及明王妃一切處用。「若有別作扇底迦法用白色香；若"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 3,
+        "found_juans": 3,
+        "total": 3
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "T0972": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "增長法，面向東坐，本尊及供養，并自身衣服悉皆黃色，燒白壇香。"
+            ]
+        }
+    },
+    "T1159B": {
+        "total": 2,
+        "pages": {
+            "juans/001.xhtml": 2
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "增長法雨潤三有流、增長大地一切物味、增長眾生所有善業、增長法"
+            ]
+        }
+    },
+    "T1284": {
+        "total": 1,
+        "pages": {
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "增長法。依如是儀則，如前觀想作護摩滿，獻三合水，家得增長。若"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 3,
+        "found_juans": 3,
+        "total": 4
+    }
+}

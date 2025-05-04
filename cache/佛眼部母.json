@@ -1,0 +1,51 @@
+{
+    "T0893a": {
+        "total": 1,
+        "pages": {
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "佛眼部母印；次於北面蓮花印，右邊置半拏囉嚩思寧部母印；次於南"
+            ]
+        }
+    },
+    "T0893b": {
+        "total": 1,
+        "pages": {
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "佛眼部母印；又於北面蓮華印右邊置半拏囉縛里寧部母印；於南面置"
+            ]
+        }
+    },
+    "T0893c": {
+        "total": 1,
+        "pages": {
+            "juans/003.xhtml": 1
+        },
+        "sentences": {
+            "juans/003.xhtml": [
+                "佛眼部母印；又於北面蓮花印，右邊置半拏囉嚩思寧部母印；次於南"
+            ]
+        }
+    },
+    "T0966": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "佛眼部母菩薩，紅蓮華色，各持幖幟印契。次於佛右邊畫文殊師利菩"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 4,
+        "found_juans": 4,
+        "total": 4
+    }
+}

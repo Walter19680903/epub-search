@@ -1,0 +1,22 @@
+{
+    "T0893c": {
+        "total": 2,
+        "pages": {
+            "juans/001.xhtml": 1,
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "明王漫荼羅法及以次第；復聞明王諸所眷屬神驗威德，願為未來諸有"
+            ],
+            "juans/002.xhtml": [
+                "明王漫荼羅，此亦如是次第安置。右邊置部母明，左邊置辨事明，蓮"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 1,
+        "found_juans": 2,
+        "total": 2
+    }
+}

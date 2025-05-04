@@ -1,0 +1,41 @@
+{
+    "T0869": {
+        "total": 2,
+        "pages": {
+            "juans/001.xhtml": 2
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "五種護摩爐隨類所求法。第五說四印曼茶羅，具二十一，成就諸藥法",
+                "五種護摩爐，一一爐所求各異。次說第四會，名降三世金剛瑜伽，於"
+            ]
+        }
+    },
+    "T0908": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "五種護摩，隨部部主五相成身。迎請已，誦讚歎，以四攝安立聖眾，"
+            ]
+        }
+    },
+    "T0909": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "五種護摩，隨部部主五相成身。迎請已誦讚歎以四攝安立聖眾，圍繞"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 3,
+        "found_juans": 3,
+        "total": 4
+    }
+}

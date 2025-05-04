@@ -1,0 +1,40 @@
+{
+    "T0895a": {
+        "total": 1,
+        "pages": {
+            "juans/003.xhtml": 1
+        },
+        "sentences": {
+            "juans/003.xhtml": [
+                "金顏、名利稱、苾唎俱胝，此等皆是蓮花部中明妃。「復說種種妙曼"
+            ]
+        }
+    },
+    "T0896": {
+        "total": 1,
+        "pages": {
+            "juans/004.xhtml": 1
+        },
+        "sentences": {
+            "juans/004.xhtml": [
+                "金顏名稱苾芻俱胝，此等皆是蓮花部明妃，亦說七俱胝真言，并種種"
+            ]
+        }
+    },
+    "T1331": {
+        "total": 1,
+        "pages": {
+            "juans/010.xhtml": 1
+        },
+        "sentences": {
+            "juans/010.xhtml": [
+                "金顏貌，濁世罪眾生，輕賤為未効，百事不吉祥，坐生諸殃考。夫欲"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 3,
+        "found_juans": 3,
+        "total": 3
+    }
+}

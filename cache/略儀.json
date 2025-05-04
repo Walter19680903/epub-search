@@ -1,0 +1,41 @@
+{
+    "T0957": {
+        "total": 2,
+        "pages": {
+            "juans/001.xhtml": 2
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "略儀軌，如先誦婀字，用發菩提心，左趺押右股，右足安左股，是如",
+                "略儀軌，先用一切佛，部心印密言，印五處或四。其印以八指，右押"
+            ]
+        }
+    },
+    "T1066": {
+        "total": 2,
+        "pages": {
+            "juans/001.xhtml": 2
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "略儀唐北天竺三藏沙門大廣智不空奉詔譯依《灌頂道場經》說修陀羅"
+            ]
+        }
+    },
+    "T1320": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "略儀。隨文記意，前呪七遍增成廣大，記句甘露；後呪三七遍流智甘"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 3,
+        "found_juans": 3,
+        "total": 5
+    }
+}

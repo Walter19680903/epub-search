@@ -1,0 +1,40 @@
+{
+    "T0852a": {
+        "total": 1,
+        "pages": {
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "勝三世金剛真言曰(金剛界降三世也)：曩莫三曼多嚩日羅(二合)"
+            ]
+        }
+    },
+    "T0852b": {
+        "total": 1,
+        "pages": {
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "勝三世金剛真言曰(金剛界降三世也)：金歸命(一)訶訶訶尾娑麼"
+            ]
+        }
+    },
+    "T0853": {
+        "total": 1,
+        "pages": {
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "勝三世金剛真言曰(如來住法幢高峯觀三昧，降伏三界難調眾生及三"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 3,
+        "found_juans": 3,
+        "total": 3
+    }
+}

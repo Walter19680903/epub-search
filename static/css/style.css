@@ -1,0 +1,150 @@
+/* static/css/style.css */
+
+/* 全域設定 */
+  body {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans TC", sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  header {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 24px;  /* 舊版字型大小 :contentReference[oaicite:6]{index=6}:contentReference[oaicite:7]{index=7} */
+  }
+  /* 搜尋區 */
+  #searchSection {
+    margin: 8px 20px 0;
+  }
+  #searchSection input[type="text"] {
+    width: 450px;
+    padding: 4px 6px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  #searchSection button {
+    padding: 4px 8px;
+    font-size: 18px;
+    margin-left: 4px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007acc;
+    color: #fff;
+    cursor: pointer;
+  }
+  #searchSection button:hover {
+    background-color: #005fa3;
+  }
+  .selected-row {
+    background-color: #ffffcc;
+  }
+
+  /* 結果表格 */
+  #resultContainer {
+    margin: 10px;
+    overflow-x: auto;
+  }
+  table {
+    width: 100%;
+    border: 1px solid #999;
+    border-collapse: collapse;
+  }
+  th {
+    border: 1px solid #999;
+    padding: 8px;
+    text-align: center;
+  }  
+  td {
+    border: 1px solid #999;
+    padding: 8px;
+    text-align: left;
+  }  
+  th {
+    cursor: pointer;
+    background-color: #eee;
+  }
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  tr:hover {
+    background-color: #d9edf7;
+  }
+  
+  /* 內容區 */
+  .content-header {
+    color: green;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  .highlight {
+    color: red;
+    font-weight: bold;
+  }
+  
+  /* 關鍵字相關內文 */
+  #textContainer {
+    margin: 20px;
+  }
+  
+  /* 懸浮按鈕 */
+  #floatContainer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 1000;
+  }
+  .scroll-btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  }
+  .scroll-btn:hover {
+    background: rgba(0, 0, 0, 0.6);
+  }
+  .scroll-btn-back {
+    bottom: 100px;
+    right: 20px;
+    background-color: #28a745;   /* 綠色底，比較醒目 */
+    width: 48px; 
+    height: 48px;
+    font-size: 20px;
+  }
+  .sort-icon {
+    margin-left: 4px;        /* 與標題文字間距 */
+    font-size: 0.8em;        /* 箭頭比文字略小 */
+    vertical-align: middle;  /* 與文字垂直置中 */
+  }
+  /* header-label：保持與舊版相同大小與字重 */
+  .header-label {
+    font-size: 1em;          /* 繼承 body(18px) 或 th 文字大小 */
+    font-weight: bold;       /* 舊版 th 預設粗體效果 */
+    vertical-align: middle;  /* 與箭頭同一基線 */  
+  }
+  .hidden {
+    display: none;
+  }
+
+  /* static/css/style.css (引用自 :contentReference[oaicite:2]{index=2}:contentReference[oaicite:3]{index=3}) */
+  /* 恢復 XLSX 下載按鈕大小與表格字型一致 */
+#downloadBtn {
+  font-size: 18px;  /* 和 table td 繼承的 font-size 相同 */
+  padding: 4px 8px; /* 與其他按鈕一致 */
+}
+    

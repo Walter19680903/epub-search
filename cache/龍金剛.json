@@ -1,0 +1,26 @@
+{
+    "T0882": {
+        "total": 3,
+        "pages": {
+            "juans/010.xhtml": 1,
+            "juans/015.xhtml": 1,
+            "juans/016.xhtml": 1
+        },
+        "sentences": {
+            "juans/010.xhtml": [
+                "龍金剛，如是等四，即金剛灌頂際吒迦主。復次，所有彼三界主后及"
+            ],
+            "juans/015.xhtml": [
+                "龍金剛金剛僕使說自心明曰：「唵(引)那(引)誐嚩日囉(二合句"
+            ],
+            "juans/016.xhtml": [
+                "龍金剛金剛僕使說此大明曰：「唵(引)嚩日囉(二合)喝囉尼吽("
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 1,
+        "found_juans": 3,
+        "total": 3
+    }
+}

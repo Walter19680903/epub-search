@@ -1,0 +1,89 @@
+{
+    "T0893a": {
+        "total": 2,
+        "pages": {
+            "juans/001.xhtml": 1,
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "三部母真言准前說之)「帶持此珠索者，毘那夜迦不能為障，身得清"
+            ],
+            "juans/002.xhtml": [
+                "三部母明次第護摩光顯其物，然後以本真言護摩而作光顯。「於諸光"
+            ]
+        }
+    },
+    "T0893b": {
+        "total": 1,
+        "pages": {
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "三部母明，次第護摩光顯其物，然後以本真言護摩而作光顯。「於諸"
+            ]
+        }
+    },
+    "T0893c": {
+        "total": 1,
+        "pages": {
+            "juans/003.xhtml": 1
+        },
+        "sentences": {
+            "juans/003.xhtml": [
+                "三部母明次第護摩光顯其物，然後以本真言護摩而作光顯。「於諸光"
+            ]
+        }
+    },
+    "T0894b": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "三部母等真言及手印者。初說佛部母真言曰：「namobhaga"
+            ]
+        }
+    },
+    "T0897": {
+        "total": 1,
+        "pages": {
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "三部母，是故三部用通。「護摩畢已，即獻閼伽，其器金作、或銀、"
+            ]
+        }
+    },
+    "T0953": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "三部母明。阿難、須菩提鉢及錫杖等，於佛右左次第而畫。外四門左"
+            ]
+        }
+    },
+    "T1251": {
+        "total": 2,
+        "pages": {
+            "juans/001.xhtml": 2
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "三部母真言音樣也。即此八大法，諸尊皆此流出。此三部，佛部真言",
+                "三部母真言七真言：一、[侍-士+俱]字；二、[仁-二+梨]字"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 7,
+        "found_juans": 8,
+        "total": 9
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "T0906": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "五大明王身。大日如來變成憾字，字變成劍，劍變成不動明王身，明"
+            ]
+        }
+    },
+    "T1298": {
+        "total": 2,
+        "pages": {
+            "juans/001.xhtml": 2
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "五大明王十二天次第，以不動五大明王為十二天主之，十二天之次，"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 2,
+        "total": 3
+    }
+}

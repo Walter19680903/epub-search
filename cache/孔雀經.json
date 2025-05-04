@@ -1,0 +1,21 @@
+{
+    "T0983B": {
+        "total": 5,
+        "pages": {
+            "juans/001.xhtml": 5
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "孔雀經真言等梵本孔雀經上tadyathākālikarali",
+                "孔雀經中tadyathāvalevalkalemātaṅgi",
+                "孔雀經下tadyathāaraḍākaraḍemaḍemad",
+                "孔雀經一部真言寶曆八(戊寅)歲三月日令沙門王開書寫焉了南嶽金"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 1,
+        "found_juans": 1,
+        "total": 5
+    }
+}

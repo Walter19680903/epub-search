@@ -1,0 +1,22 @@
+{
+    "T1251": {
+        "total": 2,
+        "pages": {
+            "juans/001.xhtml": 1,
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "十字羯磨。第二院西方軍持瓶，南方一大三鈷，北方大法螺東塔形。"
+            ],
+            "juans/002.xhtml": [
+                "十字羯磨。次降伏壇，先於四角地壇一肘七指，次上作三角壇，於花"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 1,
+        "found_juans": 2,
+        "total": 2
+    }
+}

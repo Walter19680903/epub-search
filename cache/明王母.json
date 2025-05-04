@@ -1,0 +1,40 @@
+{
+    "T0893a": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "明王母亦是金剛之母。「若金剛部珠索，著一嗚嚕捺囉叉，穿於線中"
+            ]
+        }
+    },
+    "T0893b": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "明王母亦是金剛之母。「若金剛部索用一嗚嚕(二合)捺囉(二合)"
+            ]
+        }
+    },
+    "T0893c": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "明王母，亦是一切金剛之母。「若金剛部珠索者，著一嗚嚕捺囉叉置"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 3,
+        "found_juans": 3,
+        "total": 3
+    }
+}

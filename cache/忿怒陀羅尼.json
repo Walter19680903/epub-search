@@ -1,0 +1,29 @@
+{
+    "T1171": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "忿怒陀羅尼「唵嚩日囉(二合)底乞叉拏(三合)俱嚕(二合)馱瞋"
+            ]
+        }
+    },
+    "T1183": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "忿怒陀羅尼：唵嚩日羅底乞叉拏(三合)俱盧(二合)馱瞋那瞋那吽"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 2,
+        "total": 2
+    }
+}

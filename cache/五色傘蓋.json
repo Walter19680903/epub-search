@@ -1,0 +1,29 @@
+{
+    "T0973": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "五色傘蓋函，門別安一本，即得諸鬼病等即皆消滅。第十八法者，若"
+            ]
+        }
+    },
+    "T0974F": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "五色傘蓋函，門門安置一本，即疫疾鬼病皆悉消滅不敢來。十八法："
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 2,
+        "total": 2
+    }
+}

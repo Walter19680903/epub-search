@@ -1,0 +1,29 @@
+{
+    "T0868": {
+        "total": 1,
+        "pages": {
+            "juans/003.xhtml": 1
+        },
+        "sentences": {
+            "juans/003.xhtml": [
+                "南方月輪之中，結跏趺坐，莊嚴其身，眾生憙見，令一切煩惱不能亂"
+            ]
+        }
+    },
+    "T1065": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "南方月輪中，與願觀自在，西方月輪中，現數觀自在，北方月輪中，"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 2,
+        "total": 2
+    }
+}

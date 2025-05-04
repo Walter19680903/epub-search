@@ -1,0 +1,29 @@
+{
+    "T0901": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "陀羅尼供養。「復作華印，捧種種華，如前香法呪七遍已，如前散供"
+            ]
+        }
+    },
+    "T0951": {
+        "total": 2,
+        "pages": {
+            "juans/004.xhtml": 2
+        },
+        "sentences": {
+            "juans/004.xhtml": [
+                "陀羅尼供養、名花三昧陀羅尼供養。「作是法已，復以左手執金剛杵"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 2,
+        "total": 3
+    }
+}

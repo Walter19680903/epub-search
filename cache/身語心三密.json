@@ -1,0 +1,29 @@
+{
+    "T0885": {
+        "total": 1,
+        "pages": {
+            "juans/006.xhtml": 1
+        },
+        "sentences": {
+            "juans/006.xhtml": [
+                "身語心三密金剛成就當依何住？」諸佛答言：「如來三密當依阿闍梨"
+            ]
+        }
+    },
+    "T0888": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "身語心三密，能盡纏縛諸邊際；智住真如實性中，此即金剛拳菩薩！"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 2,
+        "total": 2
+    }
+}

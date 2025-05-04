@@ -1,0 +1,33 @@
+{
+    "T0901": {
+        "total": 3,
+        "pages": {
+            "juans/003.xhtml": 1,
+            "juans/012.xhtml": 2
+        },
+        "sentences": {
+            "juans/003.xhtml": [
+                "君遲(唐云胡瓶水罐)。南方安華座，座上安帝釋天，右手把跋折羅"
+            ],
+            "juans/012.xhtml": [
+                "君遲瓶(傍開孔者名為君遲)，光焰圍繞。「第三座主名九臂觀世音"
+            ]
+        }
+    },
+    "T1246": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "君遲，瓶口中著蓮華；西北面畫一大螺。第三院中東面畫師子王，南"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 3,
+        "total": 4
+    }
+}

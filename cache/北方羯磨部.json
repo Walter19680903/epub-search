@@ -1,0 +1,29 @@
+{
+    "T1204": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "北方羯磨部，即精進門，所以出生使者名指德也。今此部指前三部德"
+            ]
+        }
+    },
+    "T1419": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "北方羯磨部主不空如來，綠色，手印左手如前正定，右手胸前或乳傍"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 2,
+        "total": 2
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "T0892": {
+        "total": 1,
+        "pages": {
+            "juans/003.xhtml": 1
+        },
+        "sentences": {
+            "juans/003.xhtml": [
+                "護魔法：息災，圓爐，白色，廣一肘半，深等半；增益，四方，黃色"
+            ]
+        }
+    },
+    "T0946": {
+        "total": 1,
+        "pages": {
+            "juans/004.xhtml": 1
+        },
+        "sentences": {
+            "juans/004.xhtml": [
+                "護魔法，一切天神皆歡喜。其火壇於中心作天神，四方一肘上下等，"
+            ]
+        }
+    },
+    "T1202": {
+        "total": 2,
+        "pages": {
+            "juans/001.xhtml": 2
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "護魔法，杓子盛牛乳一呪一燒，如是滿一千遍，能除國中大疫癘也。",
+                "護魔法者，掘地作爐，著火令熾。杓子法者，以堅木刻之，頭如杓，"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 3,
+        "found_juans": 3,
+        "total": 4
+    }
+}

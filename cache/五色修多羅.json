@@ -1,0 +1,29 @@
+{
+    "T0848": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "五色修多羅，稽首一切佛。大毘盧遮那，親自作加持，東方以為首，"
+            ]
+        }
+    },
+    "T0850": {
+        "total": 1,
+        "pages": {
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "五色修多羅，稽首一切佛。大毘盧遮那，親自作加持，東方以為首，"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 2,
+        "total": 2
+    }
+}

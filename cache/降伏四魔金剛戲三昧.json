@@ -1,0 +1,29 @@
+{
+    "T0848": {
+        "total": 1,
+        "pages": {
+            "juans/003.xhtml": 1
+        },
+        "sentences": {
+            "juans/003.xhtml": [
+                "降伏四魔金剛戲三昧，說降伏四魔、解脫六趣滿足一切智智金剛字句"
+            ]
+        }
+    },
+    "T0850": {
+        "total": 1,
+        "pages": {
+            "juans/003.xhtml": 1
+        },
+        "sentences": {
+            "juans/003.xhtml": [
+                "降伏四魔金剛戲三昧，說降伏四魔解脫彼六趣滿足一切智智金剛字句"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 2,
+        "total": 2
+    }
+}

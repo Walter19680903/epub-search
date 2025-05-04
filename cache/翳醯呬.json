@@ -1,0 +1,41 @@
+{
+    "T0950": {
+        "total": 2,
+        "pages": {
+            "juans/004.xhtml": 2
+        },
+        "sentences": {
+            "juans/004.xhtml": [
+                "翳醯呬薄誐挽(二)達磨囉惹鉢囉(二合)(三)底掣麼麼囉伽(二",
+                "翳醯呬帝儒摩里寧(引)銀曩(二合)曳娑嚩(二合引)訶(引)』"
+            ]
+        }
+    },
+    "T1241": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "翳醯呬皤哦嚩底摩賀嚩日囉(二合)哦馱哩怛囉(二合)耶嚷囉怛那"
+            ]
+        }
+    },
+    "T1306": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "翳醯呬頗ihaidaikairaimro伊賀伊那伊迦伊囉伊謨"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 3,
+        "found_juans": 3,
+        "total": 4
+    }
+}

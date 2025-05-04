@@ -1,0 +1,29 @@
+{
+    "T0873": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "金剛薩埵羯磨印。「唵薩嚩怛他(（引）)誐多嚩日囉(二合)薩怛"
+            ]
+        }
+    },
+    "T0874": {
+        "total": 1,
+        "pages": {
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "金剛薩埵羯磨印觸地手：唵(引)薩嚩怛他誐哆(一)嚩日囉(二合"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 2,
+        "total": 2
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "T1192": {
+        "total": 2,
+        "pages": {
+            "juans/003.xhtml": 2
+        },
+        "sentences": {
+            "juans/003.xhtml": [
+                "唵阿吽，想於月輪上，東西而安置。從東唵阿吽，先觀唵字體，想為"
+            ]
+        }
+    },
+    "T1193": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "唵阿吽，想於月輪上；又觀唵字身，化為佛輪形；復應想阿字，而成"
+            ]
+        }
+    },
+    "T1418": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "唵阿吽三字安在像身三處，用唵字安頂上、用阿字安口上、用吽字安"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 3,
+        "found_juans": 3,
+        "total": 4
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "T1005A": {
+        "total": 1,
+        "pages": {
+            "juans/003.xhtml": 1
+        },
+        "sentences": {
+            "juans/003.xhtml": [
+                "真言灌頂，成就無量阿僧祇福德聚，獲得無量善根。一切菩薩，金剛"
+            ]
+        }
+    },
+    "T1092": {
+        "total": 1,
+        "pages": {
+            "juans/020.xhtml": 1
+        },
+        "sentences": {
+            "juans/020.xhtml": [
+                "真言灌頂滌垢曼拏羅三昧耶，能滅一切罪障災厄，得不空王廣大威德"
+            ]
+        }
+    },
+    "T1103b": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "真言灌頂，無邊眾生皆得清淨。」水難印第二十五「以兩手中指無名"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 3,
+        "found_juans": 3,
+        "total": 3
+    }
+}

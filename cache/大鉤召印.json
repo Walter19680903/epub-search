@@ -1,0 +1,29 @@
+{
+    "T1177A": {
+        "total": 1,
+        "pages": {
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "大鉤召印，召請一切如來作神通力。從金剛大鉤形，出現加持一切世"
+            ]
+        }
+    },
+    "T1295": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "大鉤召印明。真言曰：曩莫三曼沒馱(引)喃(一)阿(去息呼)薩"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 2,
+        "total": 2
+    }
+}

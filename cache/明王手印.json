@@ -1,0 +1,29 @@
+{
+    "T0894a": {
+        "total": 1,
+        "pages": {
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "明王手印，誦此真言，印頂……等五處，便成堅固護身。真言曰：「"
+            ]
+        }
+    },
+    "T0894b": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "明王手印，誦此真言，印頂……等五處，便成堅固護身。真言曰：「"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 2,
+        "total": 2
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "T0973": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "東方金剛部，雄猛阿閦金剛藏，寶生如來虛空寶，達磨句攞無量壽，"
+            ]
+        }
+    },
+    "T1204": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "東方金剛部，即菩提心門，以日光為喻。所以出生使者名慧光。南方"
+            ]
+        }
+    },
+    "T1419": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "東方金剛部主不動如來，藍色，手印於圖樣中釋迦佛手印同，謂之降"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 3,
+        "found_juans": 3,
+        "total": 3
+    }
+}

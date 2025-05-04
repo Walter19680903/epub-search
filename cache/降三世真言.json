@@ -1,0 +1,94 @@
+{
+    "T0848": {
+        "total": 4,
+        "pages": {
+            "juans/001.xhtml": 1,
+            "juans/002.xhtml": 2,
+            "juans/007.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "降三世真言而用加之。置初門外，用灑是諸人等。彼阿闍梨以淨香水"
+            ],
+            "juans/002.xhtml": [
+                "降三世真言曰：「南麼三曼多伐折囉(二合)赧(一)訶訶訶(二)",
+                "降三世真言曰：「南麼三曼多伐折囉(二合)赧(一)訶(去)」不"
+            ],
+            "juans/007.xhtml": [
+                "降三世真言曰：「南麼三曼多伐折囉(引二合)赧(一)訶訶訶(二"
+            ]
+        }
+    },
+    "T0854": {
+        "total": 2,
+        "pages": {
+            "juans/001.xhtml": 2
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "降三世真言曰：namaḥsamantavajraṇaṃhah",
+                "降三世真言曰：namaḥsamantavajraṇaṃtra"
+            ]
+        }
+    },
+    "T0860": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "降三世真言曰：「namaḥsamantavajraṇaṃha"
+            ]
+        }
+    },
+    "T0908": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "降三世真言，或文殊師利六足尊真言。想忿怒尊身中，流出器仗雲海"
+            ]
+        }
+    },
+    "T0973": {
+        "total": 2,
+        "pages": {
+            "juans/001.xhtml": 2
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "降三世真言及手印而加持，各能成辦諸事等。次誦降三世真言曰：「"
+            ]
+        }
+    },
+    "T1171": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "降三世真言曰：「唵遜婆儞遜婆儞(去)吽(短)仡哩(二合)釁拏"
+            ]
+        }
+    },
+    "T1175": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "降三世真言曰：「唵遜婆(去)[寧*頁](引)遜婆(去)吽(短"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 7,
+        "found_juans": 9,
+        "total": 12
+    }
+}

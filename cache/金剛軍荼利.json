@@ -1,0 +1,41 @@
+{
+    "T0923": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "金剛軍荼利菩薩、一切如來鉤菩薩(東)、一切如來金剛羂索菩薩("
+            ]
+        }
+    },
+    "T0973": {
+        "total": 1,
+        "pages": {
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "金剛軍荼利菩薩、金剛矟菩薩、金剛火菩薩、金剛鐸菩薩、金剛喜菩"
+            ]
+        }
+    },
+    "T1212": {
+        "total": 2,
+        "pages": {
+            "juans/001.xhtml": 2
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "金剛軍荼利，作可畏相，右上手把金剛杵，次手執鉞斧，次下手把劍",
+                "金剛軍荼利大祕密心法，諸佛加被，一切諸天之所恭敬，能淨除一切"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 3,
+        "found_juans": 3,
+        "total": 4
+    }
+}

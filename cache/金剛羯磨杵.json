@@ -1,0 +1,33 @@
+{
+    "T0889": {
+        "total": 2,
+        "pages": {
+            "juans/003.xhtml": 1,
+            "juans/005.xhtml": 1
+        },
+        "sentences": {
+            "juans/003.xhtml": [
+                "金剛羯磨杵，及槍、戟、叉等印安於本位。「其護摩爐亦有四門，門"
+            ],
+            "juans/005.xhtml": [
+                "金剛羯磨杵團圓相者及如輪者，此是羯磨部之相，可於一切羯磨法中"
+            ]
+        }
+    },
+    "T1192": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "金剛羯磨杵，然再念隨方本尊及隨方波羅蜜菩薩真言，各加持一百八"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 3,
+        "total": 3
+    }
+}

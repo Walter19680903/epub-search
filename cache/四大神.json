@@ -1,0 +1,29 @@
+{
+    "T0889": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "四大神通菩薩，其名曰：金剛婆叉神通菩薩、金剛妙入神通菩薩、金"
+            ]
+        }
+    },
+    "T0946": {
+        "total": 1,
+        "pages": {
+            "juans/004.xhtml": 1
+        },
+        "sentences": {
+            "juans/004.xhtml": [
+                "四大神王并諸眷屬，莊嚴如法，以上中心了。「東方起首，一一中間"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 2,
+        "total": 2
+    }
+}

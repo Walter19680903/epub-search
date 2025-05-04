@@ -1,0 +1,40 @@
+{
+    "T0893a": {
+        "total": 1,
+        "pages": {
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "三部護摩而作光顯。隨其所用真言為護摩者，初且誦其真言，次誦求"
+            ]
+        }
+    },
+    "T0893b": {
+        "total": 1,
+        "pages": {
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "三部護摩而作光顯。「隨其所用真言為護摩者，初但誦其真言，次誦"
+            ]
+        }
+    },
+    "T0893c": {
+        "total": 1,
+        "pages": {
+            "juans/003.xhtml": 1
+        },
+        "sentences": {
+            "juans/003.xhtml": [
+                "三部護摩而作光顯。「隨其所用真言為護摩者，初且誦其真言，次誦"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 3,
+        "found_juans": 3,
+        "total": 3
+    }
+}

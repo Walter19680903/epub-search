@@ -1,0 +1,44 @@
+{
+    "T0996": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "金剛智杵，破邪見山、證金剛定，常持於掌中，故名金剛手。云何菩"
+            ]
+        }
+    },
+    "T1000": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "金剛智杵，漸引遍舒普周法界，以淨光明照燭一切有情界客塵煩惱自"
+            ]
+        }
+    },
+    "T1050": {
+        "total": 2,
+        "pages": {
+            "juans/001.xhtml": 1,
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "金剛智杵破壞無餘，便得往生極樂世界，皆為菩薩，名隨意口。是時"
+            ],
+            "juans/002.xhtml": [
+                "金剛智杵一切破壞，便得往生極樂世界，皆為菩薩同名妙香口。於是"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 3,
+        "found_juans": 4,
+        "total": 4
+    }
+}

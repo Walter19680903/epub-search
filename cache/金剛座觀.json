@@ -1,0 +1,40 @@
+{
+    "T0905": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "金剛座觀。鑁，金剛水部，二鑁字作水觀、蓮花觀。藍，金剛火部，"
+            ]
+        }
+    },
+    "T0906": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "金剛座觀，形四角色黃，大圓鏡智，又名金剛智)。鑁金剛水部二("
+            ]
+        }
+    },
+    "T0907": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "金剛座觀)鑁，金剛水部，二(鑁字作水觀、蓮華觀)覽，金剛火部"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 3,
+        "found_juans": 3,
+        "total": 3
+    }
+}

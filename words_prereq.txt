@@ -1,0 +1,51 @@
+1. 清空舊的來源資料整理檔 (刪除和產生都很快):
+    - 時機: 來源檔有任何變動時 (如果已經跑過 3.morph_all_inputs.py 就不用)
+    - 執行: "src\morph_inputs\clean_all_output_morph.py"
+
+2. 清空舊的名相統計快取檔 (刪除很快, 但是產生要花30~50分鐘):
+    - 時機: "input\words6" 目錄底下有新的 "名相總表" (xlsx檔) 時
+    - 執行: "src\morph_inputs\clean_all_cache_words.py"
+
+3. 產生新的來源資料整理檔 (很快):
+    - 時機: 來源檔有任何變動時 (如果之前已經跑過 morph_all_inputs.py 就不用)
+    - 執行 "src\morph_inputs\morph_all_inputs.py"
+
+4. 產生名相統計快取檔 (約1.5 hr):
+    - 執行 "src\gen_cache_by_words\gen_cache_by_words.py"
+
+5. 複製名相統計快取檔:
+    - 執行 "src\gen_cache_by_words\copy_word_caches.py"
+    
+
+--------------------------
+產生快取檔:
+1.  確認 "input\titles" 目錄經典清單 (docx檔) 存在.
+    --> 如果此檔有變動, 就砍掉 "output\morph_titles\" 目錄中的檔案
+2.  確認 "input\words6" 目錄底下最新的 "名相總表" (xlsx檔) 存在.
+    -> 如果此檔有變動, 就清空下面目錄中所有檔案:
+      --> "output\morph_words6\" 目錄, 
+      --> "output\morph_notes\" 目錄,
+3.  執行 "src\morph_inputs\morph_all_inputs.py" 
+
+複製工作目錄:
+- "chche/" 子目錄:
+    從 "output/cache_by_words/" 複製所有 json 檔案到這裡的子目錄 "cache/" 中
+- "epubs" 子目錄:  
+    從 "input/epubs/" 複製所有 epub 檔案到這裡的子目錄 "epubs/" 中
+- "modules" 子目錄:
+    從 "src/modules/" 複製所有子目錄和檔案到這裡的子目錄 "modules/" 中
+- "titles" 子目錄:
+    複製 "/morph_titles/titles.json" 到這裡的子目錄 "titles/titles.json" 中
+
+測試:
+1. 用 VSCode 測試 (用 VSCode 本身的 python)
+2. 用 docker 進行測試
+    - 要先建立 venv
+    - 準備 Dockerfile 和 requirements.txt
+
+準備上 Render:
+1. 準備連上 Github
+    - 用特定帳號進入 wsl
+    - 連入 github 進入相關工作
+2. 設定 Render 連上 Github
+

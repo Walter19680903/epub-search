@@ -1,0 +1,33 @@
+{
+    "T0973": {
+        "total": 2,
+        "pages": {
+            "juans/001.xhtml": 1,
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "方形紫金色，為金剛輪，便誦真言曰：「娜麼三曼多勃馱喃阿a」每"
+            ],
+            "juans/002.xhtml": [
+                "方形，黃阿」色，東方。「ha字青色，西方，半月形。「vaṃ字"
+            ]
+        }
+    },
+    "T1141": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "方形，黃色。其形如左。觀金剛輪真言曰：namaḥsamant"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 3,
+        "total": 3
+    }
+}

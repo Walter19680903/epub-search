@@ -1,0 +1,29 @@
+{
+    "T0962": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "五輪塔中，亦可安置多寶塔中，亦可安置三股塔中，亦可安置五股塔"
+            ]
+        }
+    },
+    "T1297": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "五輪塔中，受持諸戒，歸依三寶，攝心而住應作是觀：地依水生，水"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 2,
+        "total": 2
+    }
+}

@@ -1,0 +1,52 @@
+{
+    "T0895a": {
+        "total": 1,
+        "pages": {
+            "juans/003.xhtml": 1
+        },
+        "sentences": {
+            "juans/003.xhtml": [
+                "獨髻、金顏、名利稱、苾唎俱胝，此等皆是蓮花部中明妃。「復說種"
+            ]
+        }
+    },
+    "T0895b": {
+        "total": 2,
+        "pages": {
+            "juans/002.xhtml": 2
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "獨髻、金頰、名稱、苾句胝，此等皆是蓮花部中明妃。復說種種妙漫",
+                "獨髻)、嶠哩(此為金色相)、野捨末底(此云名稱慧)、苾句胝("
+            ]
+        }
+    },
+    "T0898": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "獨髻羅剎女形，口中牙齒鉤出恐畏，以人髑髏作其頭冠，坐在石上以"
+            ]
+        }
+    },
+    "T1272": {
+        "total": 1,
+        "pages": {
+            "juans/003.xhtml": 1
+        },
+        "sentences": {
+            "juans/003.xhtml": [
+                "獨髻，右第一手執拶嚕迦、第二手執鉞斧、第三手執輸羅、第四手執"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 4,
+        "found_juans": 4,
+        "total": 5
+    }
+}

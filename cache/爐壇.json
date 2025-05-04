@@ -1,0 +1,40 @@
+{
+    "T0909": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "爐壇，然後獻閼伽，各結本羯磨印安立，示本三昧耶，誦護摩真言一"
+            ]
+        }
+    },
+    "T1141": {
+        "total": 1,
+        "pages": {
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "爐壇，方圓、三角、半月壇等。量取四肘，中心掘方圓一肘，深亦一"
+            ]
+        }
+    },
+    "T1251": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "爐壇：入相曼陀羅，即行者護摩時，心念其尊體相，並瞋目念佛位體"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 3,
+        "found_juans": 3,
+        "total": 3
+    }
+}

@@ -1,0 +1,82 @@
+{
+    "T0895b": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "五色彩作漫荼羅，其五色者，謂白、黃、赤、青、黑之類，其量頓方"
+            ]
+        }
+    },
+    "T1006": {
+        "total": 3,
+        "pages": {
+            "juans/002.xhtml": 2,
+            "juans/003.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "五色彩畫。其彩於新器中和香，然後用之。其壇中心作一小壇，方圓",
+                "五色彩帛纏之，壇四面懸五色幡。應作七種油餅。於大壇外更置三十"
+            ],
+            "juans/003.xhtml": [
+                "五色彩畫，其彩於新器中和香，然後用之。其場中心作一小壇，方圓"
+            ]
+        }
+    },
+    "T1008": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "五色彩成，誦陀羅尼一千二十遍，燒薩勒枳香(薰陸香也)，藥叉女"
+            ]
+        }
+    },
+    "T1092": {
+        "total": 1,
+        "pages": {
+            "juans/015.xhtml": 1
+        },
+        "sentences": {
+            "juans/015.xhtml": [
+                "五色彩粉模畫外界，當開四門。六十四金剛橛量長九寸釘壇外界，五"
+            ]
+        }
+    },
+    "T1239": {
+        "total": 2,
+        "pages": {
+            "juans/001.xhtml": 1,
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "五色彩泥四方。下臺用白土和香湯塗，上用牛糞和香塗。其壇上及中"
+            ],
+            "juans/002.xhtml": [
+                "五色彩畫安了，神座前各各安食盤供養。四門各燒一爐香，刀箭弓杖"
+            ]
+        }
+    },
+    "T1282": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "五色彩畫。又五色綵各二尺一寸。在壇內安天女座，酥密乳等菓子各"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 6,
+        "found_juans": 8,
+        "total": 9
+    }
+}

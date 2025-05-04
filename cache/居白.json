@@ -1,0 +1,29 @@
+{
+    "T0895a": {
+        "total": 1,
+        "pages": {
+            "juans/003.xhtml": 1
+        },
+        "sentences": {
+            "juans/003.xhtml": [
+                "居白、觀世、獨髻、金顏、名利稱、苾唎俱胝，此等皆是蓮花部中明"
+            ]
+        }
+    },
+    "T0895b": {
+        "total": 1,
+        "pages": {
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "居白、觀世、獨髻、金頰、名稱、苾句胝，此等皆是蓮花部中明妃。"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 2,
+        "total": 2
+    }
+}

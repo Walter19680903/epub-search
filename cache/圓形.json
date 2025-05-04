@@ -1,0 +1,40 @@
+{
+    "T0897": {
+        "total": 1,
+        "pages": {
+            "juans/002.xhtml": 1
+        },
+        "sentences": {
+            "juans/002.xhtml": [
+                "圓形，與院相應，誦其真言，中置一點；自餘諸尊或圓及方，各誦彼"
+            ]
+        }
+    },
+    "T1141": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "圓形如左。水輪真言曰：namaḥsamantabuddhān"
+            ]
+        }
+    },
+    "T1341": {
+        "total": 1,
+        "pages": {
+            "juans/006.xhtml": 1
+        },
+        "sentences": {
+            "juans/006.xhtml": [
+                "圓形，亦名普化，亦名令喜，亦名勝意，亦名不瞋，亦名作日分，亦"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 3,
+        "found_juans": 3,
+        "total": 3
+    }
+}

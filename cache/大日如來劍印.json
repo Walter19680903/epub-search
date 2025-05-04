@@ -1,0 +1,30 @@
+{
+    "T0864A": {
+        "total": 2,
+        "pages": {
+            "juans/001.xhtml": 2
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "大日如來劍印二手當心合掌，屈二頭指中節橫相跓，以二大母指並押",
+                "大日如來劍印。以二手當心合掌，屈二頭指中節橫相跓，以二大拇指"
+            ]
+        }
+    },
+    "T1031": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "大日如來劍印。以二手當心合掌，屈二頭指中節橫相跓，以二大拇指"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 2,
+        "total": 3
+    }
+}

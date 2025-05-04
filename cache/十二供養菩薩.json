@@ -1,0 +1,29 @@
+{
+    "T0997": {
+        "total": 1,
+        "pages": {
+            "juans/009.xhtml": 1
+        },
+        "sentences": {
+            "juans/009.xhtml": [
+                "十二供養菩薩，最外一院安置十天，彼一一尊各有真言。五佛真言已"
+            ]
+        }
+    },
+    "T1192": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "十二供養菩薩：金剛燈光明菩薩、金剛聲光明菩薩、金剛香光明菩薩"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 2,
+        "total": 2
+    }
+}

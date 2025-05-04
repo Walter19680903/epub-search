@@ -1,0 +1,55 @@
+{
+    "T0848": {
+        "total": 2,
+        "pages": {
+            "juans/003.xhtml": 1,
+            "juans/007.xhtml": 1
+        },
+        "sentences": {
+            "juans/003.xhtml": [
+                "轉明妃曰：「南麼薩婆怛他(引)蘗帝[口*驃](毘庾反)(一)"
+            ],
+            "juans/007.xhtml": [
+                "轉明妃曰：「南麼薩婆怛他(引)蘖帝[口*驃](一)微濕嚩(二"
+            ]
+        }
+    },
+    "T0852b": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "轉明妃真言曰：曩莫薩嚩怛他蘖帝[口*驃](一)尾濕嚩(二合)"
+            ]
+        }
+    },
+    "T0855": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "轉明妃。次增加句「以我功德力」云云。次讚(心略)。次禮佛。次"
+            ]
+        }
+    },
+    "T0860": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "轉明妃偈曰：「以我功德所莊嚴，及淨法界中出生，如來神力加持故"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 4,
+        "found_juans": 5,
+        "total": 5
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "T0867": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "普賢如來，以偈讚曰：「大有金剛性，光明遍照王，清淨妙蓮染，無"
+            ]
+        }
+    },
+    "T1021": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "普賢如來說，于闐國三藏實叉難陀譯。別有本經云：若人誦此一遍，"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 2,
+        "total": 2
+    }
+}
