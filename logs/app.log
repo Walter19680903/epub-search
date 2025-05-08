@@ -63,3 +63,16 @@
 2025-05-05 21:25:29,443 INFO Render index.html，update_date=2025/05/04
 2025-05-05 21:25:39,166 INFO 搜尋關鍵字：曼陀羅，cache 檔案：d:\cbeta_v3\src\cloud_by_word\cache\曼陀羅.json
 2025-05-05 21:25:39,216 INFO 使用快取結果
+2025-05-08 21:42:12,464 INFO 成功載入 titles.json，條目數：614
+2025-05-08 21:42:12,472 INFO 啟動 Flask 伺服器：0.0.0.0:5000
+2025-05-08 21:42:15,869 INFO Render index.html，update_date=2025/05/04
+2025-05-08 21:42:23,935 INFO Render index.html，update_date=2025/05/04
+2025-05-08 21:42:27,420 INFO 搜尋關鍵字：曼陀羅，cache 檔案：d:\cbeta_v3\src\cloud_by_word\cache\曼陀羅.json
+2025-05-08 21:42:27,442 INFO 使用快取結果
+2025-05-08 22:14:31,507 INFO 成功載入 titles.json，條目數：614
+2025-05-08 22:14:31,518 INFO 啟動 Flask 伺服器：0.0.0.0:5000
+2025-05-08 22:18:51,996 INFO 成功載入 titles.json，條目數：614
+2025-05-08 22:18:51,997 INFO 啟動 Flask 伺服器：0.0.0.0:5000
+2025-05-08 22:19:01,106 INFO Render index.html，update_date=2025/05/04
+2025-05-08 22:19:08,315 INFO 搜尋關鍵字：曼陀羅，cache 檔案：d:\cbeta_v3\src\cloud_by_word\cache\曼陀羅.json
+2025-05-08 22:19:08,319 INFO 使用快取結果

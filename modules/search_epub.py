@@ -125,7 +125,10 @@ def search_with_wildcard_in_documents(
         # 依序擷取 snippet
         while processed_index < len(matches):
             m = matches[processed_index]
-            start = m.start()
+            # 將第一個 match 中心化於 snippet 中段
+            center = m.start() + kw_len // 2
+            half_len = default_len // 2
+            start = max(center - half_len, 0)
             end = min(start + default_len, text_len)
 
             # 延伸：避免截斷任何 match
