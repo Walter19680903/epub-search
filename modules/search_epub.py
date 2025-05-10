@@ -4,9 +4,16 @@ import logging
 import ebooklib
 from ebooklib import epub
 from bs4 import BeautifulSoup
-import re
 import pickle  # 新增：用於序列化快取結果
-from typing import Dict, List
+from typing import Dict, List, Any
+
+# 嘗試匯入第三方 regex，失敗則 fallback to built-in re
+try:
+    import regex as re_mod
+    HAS_REGEX = True
+except ImportError:
+    import re as re_mod
+    HAS_REGEX = False
 
 
 # 模組與專案目錄設定
@@ -86,7 +93,7 @@ def load_epub(epub_path, logger=None, ignore_cache=False):
 
 # 再次優化後的 search_with_wildcard_in_documents 函式
 def search_with_wildcard_in_documents(
-    documents: Dict[str, str], keyword: str, default_len: int = 30, logger=None
+    documents: Dict[str, str], keyword: str, default_len: int = 60, logger=None
 ) -> Dict[str, any]:
     """
     支援萬用字元的全文搜尋，並依照 match 逐一擷取不重疊 snippet，
@@ -97,50 +104,67 @@ def search_with_wildcard_in_documents(
         logger = logging.getLogger(__name__)
 
     # 編譯 pattern： '*' 萬用字元對應任一中文字
-    pattern = re.compile(re.escape(keyword).replace(r"\*", r"[一-鿿]"))
-    raw_keyword = keyword.replace('*', '')
+    # pattern = re.compile(re.escape(keyword).replace(r"\*", r"[一-鿿]"))
+    escaped = re_mod.escape(keyword)
+    if HAS_REGEX:
+        # 用 \p{Han} 匹配所有漢字
+        wildcard_pattern = escaped.replace(r"\*", r"\p{Han}")
+        pattern = re_mod.compile(wildcard_pattern, flags=re_mod.UNICODE)
+    else:
+        # 內建 re 無法 \p{Han}，改為手動列出常用與擴充A~F範圍
+        bracket = (
+            r"[\u3400-\u4DBF\u4E00-\u9FFF"
+            r"\U00020000-\U0002A6DF"
+            r"\U0002A700-\U0002B73F"
+            r"\U0002B740-\U0002B81F"
+            r"\U0002B820-\U0002CEAF"
+            r"\U0002CEB0-\U0002EBEF]"
+        )
+        wildcard_pattern = escaped.replace(r"\*", bracket)
+        pattern = re_mod.compile(wildcard_pattern)
+
+    raw_keyword = keyword.replace("*", "")
     kw_len = len(raw_keyword)
+    result: Dict[str, Any] = {"total": 0, "pages": {}, "sentences": {}}
 
-    # 初始化結果結構
-    result = {"total": 0, "pages": {}, "sentences": {}}
-
-    # 逐頁處理
     for page, text in documents.items():
-        # 清理文字
-        clean_text = re.sub(r"[\n\t\r]", "", text)
-        clean_text = re.sub(r"\s+", "", clean_text)
+        # 清理
+        clean_text = re_mod.sub(r"[\n\t\r]", "", text)
+        clean_text = re_mod.sub(r"\s+", "", clean_text)
         text_len = len(clean_text)
 
-        # 找匹配
+        # 找到所有 match
         matches = list(pattern.finditer(clean_text))
-        match_count = len(matches)
-        if match_count == 0:
+        if not matches:
             continue
+
+        # 統計次數
+        match_count = len(matches)
         result["total"] += match_count
         result["pages"][page] = match_count
 
+        # 不重疊 snippet 擷取
         snippets: List[str] = []
-        processed_index = 0
+        next_search_pos = 0
 
-        # 依序擷取 snippet
-        while processed_index < len(matches):
-            m = matches[processed_index]
-            # 將第一個 match 中心化於 snippet 中段
+        for m in matches:
+            # 跳過已在先前 snippet 中的 match
+            if m.start() < next_search_pos:
+                continue
+
+            # 詳細 log
+            logger.debug(f"search_with_wildcard: page={page}, match_start={m.start()}")
+
+            # 計算置中起點與結尾
             center = m.start() + kw_len // 2
             half_len = default_len // 2
-            start = max(center - half_len, 0)
-            end = min(start + default_len, text_len)
+            start = max(center - half_len, next_search_pos)
+            end = start + default_len
+            if end > text_len:
+                end = text_len
+                start = max(text_len - default_len, next_search_pos)
 
-            # 延伸：避免截斷任何 match
-            extended = True
-            while extended:
-                extended = False
-                for nxt in matches[processed_index:]:
-                    if nxt.start() < end < nxt.end():
-                        end = min(nxt.end(), text_len)
-                        extended = True
-
-            # 偵測尾部截斷關鍵字
+            # 偵測並補足被截斷的關鍵字尾部
             snippet = clean_text[start:end]
             for i in range(1, kw_len):
                 if snippet.endswith(raw_keyword[:i]) and end + (kw_len - i) <= text_len:
@@ -148,16 +172,18 @@ def search_with_wildcard_in_documents(
                     snippet = clean_text[start:end]
                     break
 
-            # 計算此段落含 match 數量
-            m_count = sum(1 for mk in matches if start <= mk.start() < end)
+            # Log 片段資訊
+            logger.debug(
+                f"snippet range: start={start}, end={end}, preview={snippet[:30]}…"
+            )
 
             snippets.append(snippet)
-            processed_index += m_count
+            next_search_pos = end
 
-        # 更新結果
         result["sentences"][page] = snippets
 
     return result
+
 
 
 def search_in_documents(documents, keyword, logger=None):
