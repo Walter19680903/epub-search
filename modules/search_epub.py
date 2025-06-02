@@ -1,6 +1,7 @@
 import os
 import json
 import logging
+import re
 import ebooklib
 from ebooklib import epub
 from bs4 import BeautifulSoup

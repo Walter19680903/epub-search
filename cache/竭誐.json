@@ -1,0 +1,29 @@
+{
+    "T1065": {
+        "total": 1,
+        "pages": {
+            "juans/001.xhtml": 1
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "即成。左轉三匝。真言曰：「（四）唵嚩日羅(二合)達磨(一)竭誐(劍也)薩嚩藍羅(二合)訶(一切鬼也)薩娑(二合)吒(破壞"
+            ]
+        }
+    },
+    "T1176": {
+        "total": 2,
+        "pages": {
+            "juans/001.xhtml": 2
+        },
+        "sentences": {
+            "juans/001.xhtml": [
+                "eda唵耨佉泚(去)娜四曰oṃkhargagrakhaṃ唵竭誐仡囉(二合)欠(平)五曰oṃkhargasatva唵竭誐薩"
+            ]
+        }
+    },
+    "_stat_": {
+        "found_epubs": 2,
+        "found_juans": 2,
+        "total": 3
+    }
+}
