@@ -6,20 +6,6 @@
 window.selectedKey = null;
 
 /**
- * 記錄並高亮使用者點選的列
- * @param {number} idx - 資料列索引（從 1 開始）
-*/
-// function rememberRow(idx) {
-//   var table = document.getElementById('resultTable');
-//   if (!table) return;
-//   var key = table.rows[idx].cells[0].innerText;
-//   console.log("記錄選取的經號:", key);
-//   window.selectedKey = key;
-//   highlightSelectedRow();
-// }
-
-
-/**
  * 根據經號 key，記錄使用者點選的經文列並高亮
  */
 function rememberKey(e, key) {
@@ -201,12 +187,6 @@ function renderTable(items) {
     var item = items[key];
     var pg = item.pages ? Object.keys(item.pages).length : 0;
     var rowIndex = i + 1;
-    // html += '<tr>'
-    //      + '<td><a href="#sutra-' + key + '" onclick="rememberRow(' + rowIndex + ')">' + key + '</a></td>'
-    //      + '<td>' + pg + '</td>'
-    //      + '<td><a href="#sutra-' + key + '" onclick="rememberRow(' + rowIndex + ')">' + item.title + '</a></td>'
-    //      + '<td>' + (item.count || '') + '</td>'
-    //      + '</tr>';
     html += '<tr>'
      + `<td><a href="#sutra-${key}" onclick="rememberKey(event, '${key}')">${key}</a></td>`
      + `<td>${pg}</td>`
@@ -257,7 +237,7 @@ function downloadXLSX() {
     var ws = XLSX.utils.table_to_sheet(table);
     var wb = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(wb, ws, '搜尋結果');
-    // 下載 XLSX 檔案
+    // 下載 XLSX 檔案 
     XLSX.writeFile(wb, 'results.xlsx');
 }
 
@@ -271,6 +251,9 @@ function renderContent(items, keyword) {
            + '，出現次數:' + appearSum
            + '）</h3>';
 
+  // 解析關鍵字，構建正則表達式和高亮策略
+  const highlightInfo = buildHighlightRegexAndInfo(keyword); 
+
   keys.forEach(function(key) {
     var item = items[key];
     var pg = item.pages ? Object.keys(item.pages).length : 0;
@@ -281,9 +264,8 @@ function renderContent(items, keyword) {
 
     if (Array.isArray(item.paragraphs)) {
       item.paragraphs.forEach(function(p) {
-        var highlighted = p.replace(new RegExp('(' + escapeRegExp(keyword) + ')', 'g'),
-                                    '<span class="highlight">$1</span>');
-        html += '<p>' + highlighted + '</p>';
+        // 使用新的高亮函式
+        html += '<p>' + applySmartHighlight(p, highlightInfo) + '</p>';
       });
     }
   });
@@ -331,9 +313,125 @@ function calculateVolume(items) {
 function calculateAppear(items) {
   return Object.values(items).reduce((s,it) => s + (parseInt(it.count)||0), 0);
 }
-function escapeRegExp(s) {
-  return s.replace(/[.*+?^${}()|[\\\]\\]/g, '\\\\$&');
+
+// ------------------------------------------
+// 核心高亮邏輯修改
+// ------------------------------------------
+
+/**
+ * 構建正則表達式和高亮資訊。
+ * 根據關鍵字中的 '*' 位置，判斷哪些部分應該被高亮。
+ * 規則：所有字面文字和 '*' 匹配的字元都高亮。
+ * '*' 匹配的字元範圍限制為中文字、英文字母和數字，以避免標點符號高亮。
+ *
+ * @param {string} keyword - 原始關鍵字字串，可能包含 '*'
+ * @returns {{regex: RegExp, partsToHighlight: Array<number>}} 包含正則表達式和需要高亮的捕獲組索引數組。
+ */
+function buildHighlightRegexAndInfo(keyword) {
+    let regexPattern = '';
+    const partsToHighlight = []; // 儲存需要高亮的捕獲組索引
+    let groupIndex = 1; // 捕獲組從 1 開始計數
+
+    // 將關鍵字拆分為單個字元或連續的非 '*' 字串
+    const segments = [];
+    let currentSegment = '';
+    for (let i = 0; i < keyword.length; i++) {
+        if (keyword[i] === '*') {
+            if (currentSegment !== '') {
+                segments.push(currentSegment);
+                currentSegment = '';
+            }
+            segments.push('*'); // 每個 '*' 作為獨立片段
+        } else {
+            currentSegment += keyword[i];
+        }
+    }
+    if (currentSegment !== '') {
+        segments.push(currentSegment);
+    }
+
+    // 遍歷所有片段，構建正則表達式模式和高亮策略
+    segments.forEach(segment => {
+        if (segment === '*') {
+            // 處理萬用字元 '*'
+            // 匹配中文字元、數字和英文字母，不包含標點符號和空格。
+            // 使用常見的中文、英文、數字範圍更穩妥。
+            regexPattern += '([\\u4e00-\\u9fa5a-zA-Z0-9])'; // 每個 '*' 匹配一個有效「字」，並使用捕獲組
+            partsToHighlight.push(groupIndex); // 所有 '*' 匹配的內容都高亮
+            groupIndex++;
+        } else {
+            // 處理字面文字
+            // 將字面文字中的特殊字元轉義，並作為捕獲組
+            regexPattern += '(' + segment.replace(/[.*+?^${}()|[\\\]\\]/g, '\\$&') + ')'; 
+            partsToHighlight.push(groupIndex); // 字面文字總是高亮
+            groupIndex++;
+        }
+    });
+
+    return {
+        // 使用 'g' 標誌確保全局匹配所有出現的關鍵字模式
+        regex: new RegExp(regexPattern, 'g'),
+        partsToHighlight: partsToHighlight
+    };
 }
+
+
+/**
+ * 應用智慧型高亮邏輯。
+ * @param {string} text - 原始段落文本。
+ * @param {{regex: RegExp, partsToHighlight: Array<number>}} highlightInfo - 包含正則表達式和需要高亮的捕獲組索引。
+ * @returns {string} 包含高亮標籤的 HTML 字串。
+ */
+function applySmartHighlight(text, highlightInfo) {
+    const regex = highlightInfo.regex;
+    const partsToHighlight = highlightInfo.partsToHighlight;
+
+    if (!text || !regex) {
+        return text;
+    }
+
+    let lastIndex = 0;
+    let resultHtml = '';
+    let match;
+
+    // 使用 regex.exec() 迭代所有匹配
+    // 這個循環會找到所有符合 `regex` 模式的子字串
+    while ((match = regex.exec(text)) !== null) {
+        // 將當前匹配之前的文本添加到結果中 (非高亮部分)
+        resultHtml += text.substring(lastIndex, match.index);
+
+        // 拼接匹配到的各部分，並根據 partsToHighlight 決定是否高亮
+        let currentMatchHtml = '';
+        // match[0] 是整個匹配到的字串
+        // match[1], match[2], ... 是每個捕獲組的內容
+        for (let i = 1; i < match.length; i++) {
+            const capturedText = match[i] || ''; // 確保即使沒有捕獲到也為空字串
+            if (partsToHighlight.includes(i)) {
+                // 如果這個捕獲組的索引在需要高亮的列表中，則高亮
+                currentMatchHtml += `<span class="highlight">${capturedText}</span>`;
+            } else {
+                // 否則，不高亮
+                currentMatchHtml += capturedText;
+            }
+        }
+        // 將處理過的高亮/不高亮部分添加到結果中
+        resultHtml += currentMatchHtml;
+
+        // 更新 lastIndex 到當前匹配的結束位置
+        lastIndex = match.index + match[0].length;
+
+        // 處理零寬度匹配導致的無限循環 (對於這裡的模式，通常不會發生，但作為最佳實踐保留)
+        if (match[0].length === 0) {
+            regex.lastIndex++;
+        }
+    }
+
+    // 將最後一部分文本（在所有匹配之後的部分）添加到結果中
+    resultHtml += text.substring(lastIndex);
+
+    return resultHtml;
+}
+
 
 // 綁定 Enter 觸發搜尋
 document.addEventListener('DOMContentLoaded', function() {
